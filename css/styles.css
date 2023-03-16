@@ -1,7 +1,8 @@
-/* Use this file to use your own styles*/
 
-/* Import declaration to use Google Fonts - check https://fonts.google.com/ for details */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&family=Source+Serif+Pro:ital@1&display=swap');
+
 
 /* Styles for the body */
 
@@ -10,19 +11,32 @@ body {
 	color: #202030;
 	background-color: #f8f8fc;
 }
-
+h1, h2{
+	font-family: 'Oswald', sans-serif;
+}
+main{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-flow: column;
+}
+aside{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-flow: column;
+}
 /* Styles for custom classes in the document. (There are more, try to find them out!) */
 
 .resume-header {
-    background-color: #e0f0ff;
+    background-color: #0063B0;
+	color: #C7DBFF;
 }
 
 .resume-main {
-	background-color: #fffefc;
+	background-color: #fff;
 }
 
 .resume-aside {
-	background-color: #fff0e0;
+	background-color: #8CBCFA;
 }
 
 /* Styles for lists in the document */
@@ -49,3 +63,24 @@ body {
 	height: 1em;
 	flex-basis: 1.4em;
 }
+
+/*Custom Class*/
+.language-progress{
+	background-color: #0063B0;
+}
+
+.language-rate {
+	color: #fff;
+	font-weight: 600;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+a:hover {
+    color: #000;
+    text-decoration: underline;
+	font-style: oblique;
+}
+
